@@ -22,21 +22,15 @@ def navbar_icons() -> rx.Component:
                     border_radius="25%",
                 ),
                 rx.heading(
-                    "Reflex", size="7", weight="bold"
+                    "My Trading App", size="7", weight="bold"
                 ),
                 align_items="center",
             ),
             rx.hstack(
                 navbar_icons_item("Home", "home", "/#"),
-                navbar_icons_item(
-                    "Pricing", "coins", "/#"
-                ),
-                navbar_icons_item(
-                    "Contact", "mail", "/#"
-                ),
-                navbar_icons_item(
-                    "Services", "layers", "/#"
-                ),
+                navbar_icons_item("Pricing", "coins", "/#"),
+                navbar_icons_item("Contact", "mail", "/#"),
+                navbar_icons_item("Services", "layers", "/#"),
                 spacing="6",
             ),
             justify="between",
