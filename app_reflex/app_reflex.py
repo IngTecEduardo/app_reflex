@@ -20,7 +20,7 @@ def navbar_link(text: str, url: str) -> rx.Component:
     )
 
 def navbar() -> rx.Component:
-    return rx.container(
+    return rx.box(
         
         rx.hstack(
             rx.hstack(
@@ -31,7 +31,7 @@ def navbar() -> rx.Component:
                     border_radius="25%",
                 ),
                 rx.heading(
-                    "Reflex", size="7", weight="bold"
+                    "Trading", size="7", weight="bold"
                 ),
                 align_items="center",
             ),
@@ -55,7 +55,7 @@ def navbar() -> rx.Component:
 )
 
 def index() -> rx.Component:
-    return rx.container(
+    return rx.box(
         navbar(),
     )
 
