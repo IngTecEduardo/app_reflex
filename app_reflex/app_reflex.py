@@ -1,8 +1,15 @@
 """Welcome to Reflex! This file outlines the steps to create a basic app."""
 
-import reflex as rx
+import sys
+from pathlib import Path
 
+file = Path(__file__).resolve()
+parent, root = file.parent, file.parents[1]
+sys.path.append(str(root))
+
+import reflex as rx
 from rxconfig import config
+
 
 
 class State(rx.State):
@@ -37,3 +44,4 @@ def index() -> rx.Component:
 
 app = rx.App()
 app.add_page(index)
+app._compile()
