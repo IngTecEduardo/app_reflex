@@ -1,1 +1,5 @@
 reflex==0.5.8
+plotly==5.23.0
+pandas==2.2.2
+pandas_ta==0.3.14b0
+yahoo-finance==1.4.0

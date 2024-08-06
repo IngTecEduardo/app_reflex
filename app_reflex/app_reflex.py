@@ -13,6 +13,7 @@ from rxconfig import config
 
 from app_reflex.components.navbar import navbar_icons, navbar_icons_item
 
+
 class State(rx.State):
     """The app state."""
     pass
@@ -22,7 +23,5 @@ def index() -> rx.Component:
         navbar_icons(),
     )
 
-
 app = rx.App()
 app.add_page(index)
-app._compile()
